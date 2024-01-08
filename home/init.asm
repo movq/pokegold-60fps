@@ -74,6 +74,7 @@ Init::
 ; Clear HRAM
 	ldh a, [hCGB]
 	push af
+	call DoubleSpeed
 	xor a
 	ld hl, HRAM_Begin
 	ld bc, HRAM_End - HRAM_Begin
